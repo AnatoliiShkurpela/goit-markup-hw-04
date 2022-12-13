@@ -87,9 +87,12 @@ body {
 
 /*header*/
 .header-conteiner{
-    background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.wis-header{
     align-items: center;
+    background: #FFFFFF;
+
 }
 
 .page-header{
@@ -183,11 +186,13 @@ font-family: 'Roboto',sans-serif;
 
     /*hero*/
 .hero-fon {
+    width: 1440px;
     text-align: center;
     padding: 192px 0;
-    background-image: url(../images/hero/people-office.jpg);
     background-size: cover;
-    background:linear-gradient (rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    background-position: center;
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/people-office.jpg);
 }
 
 .main-title {
@@ -225,7 +230,7 @@ font-family: 'Roboto',sans-serif;
 }   
 
 .modal-btn:hover {
-    background-color: var(--secondary-color-first)
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .modal-btn:focus {
     background-color: #404BBF;
@@ -333,7 +338,8 @@ font-family: 'Roboto',sans-serif;
     width: 64px;
     height: 64px;
 }
-.customer-conteiner{
+.customer-section{
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -412,24 +418,25 @@ font-family: 'Roboto',sans-serif;
         padding: 0;
         margin: 0;
         list-style: none;
-        /* margin-left: calc(-1* var(--card-set-gap));
-        margin-top: calc(-2 * var(--card-set-gap)); */
         text-decoration: none;
 }
 
 .flex-element{
     flex-basis: calc((100% - 2 * var(--card-set-gap))/3);
-    /* margin-left: var(--card-set-gap);
-    margin-top: 2 * var(--card-set-gap); */
     text-decoration: none;    
-    /* width: 360px;
-    height: 420px; */
+    border: 0.5px solid var(--secondary-color-fourth);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
        
+}
+
+.flex-element:hover,
+.flex-element:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-link{
     text-decoration: none;
-    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(tp238-pf-s73-05-mockup);
 }
 
 .portfolio-button-list{
@@ -451,6 +458,7 @@ font-family: 'Roboto',sans-serif;
         padding-right: 24px;
         padding-bottom: 12px;
         padding-left: 24px;
+        border: 1px solid var(--secondary-color-third)
        
     
 }
@@ -471,12 +479,16 @@ font-family: 'Roboto',sans-serif;
     padding-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
+    border: 0.5px solid;
+    border-color: var(--secondary-color-fourth);
+    border-top: none;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
     color:var(--secondary-color-fourth);
     background-color: var(--secondary-color-first);
+    border-color: transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*main*/
